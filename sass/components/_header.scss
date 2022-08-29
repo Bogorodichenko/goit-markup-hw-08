@@ -1,0 +1,89 @@
+.header {
+    box-sizing: border-box;
+    /* height: 80px; */
+    border: 1px #ECECEC;
+    background-color: #ffffff;
+    border-bottom: 1px solid #EEEEEE;
+
+}
+
+// ЛОГОТИП
+
+.logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #000000;
+    text-decoration: none;
+}
+
+.logo-web {
+    color: var(--accent-color);
+}
+
+
+
+// КОНТАКТИ В ХЕДЕРІ
+.header-contacts {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+
+          &__item:not( :last-child) {
+            margin-right: 50px;
+        }
+}
+
+
+.header-contacts__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    transition: color var(--timing-function);
+
+         &:hover,
+         &:focus,
+         &--hover {
+            color: var(--accent-color);
+        }
+}
+
+
+.header-contacts__email {
+    color: var(--accent-color);
+}
+
+.header-contacts__icon-envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.header-contacts__icon-smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+// .icon-envelope:hover,
+// .icon-envelope:focus {
+//     fill: var(--accent-color);
+// }

@@ -1,0 +1,109 @@
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0;
+    /* background-color: teal; */
+}
+
+.portfolio-list__item {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+        &:nth-child(3n) {
+                margin-right: 0;
+            }
+        
+        &:nth-last-child(-n +3) {
+                margin-bottom: 0;
+            }
+}
+
+.portfolio-link {
+    text-decoration: none;
+    transition: box-shadow var(--timing-function);
+
+       &:hover {
+                box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                    0px 1px 2px rgba(0, 0, 0, 0.08),
+                    0px 2px 2px rgba(0, 0, 0, 0.12);
+            }
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+
+    &:hover .portfolio-item__overlay {
+            transform: translateY(0);
+        }
+    
+    &:focus .portfolio-item__overlay {
+            transform: translateY(0);
+        }
+        
+}
+
+.portfolio-item__image {
+    display: block;
+    line-height: 0;
+}
+
+
+.portfolio-item__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    background-color: rgba(33, 150, 243, 0.9);
+    transition: transform var(--timing-function);
+}
+
+.overlay-item__text {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    padding-top: 64px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 64px;
+    margin: 0;
+}
+
+
+.portfolio-cardbox {
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    width: 370px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+}
+
+.portfolio-cardbox__title {
+    color: var(--text-title-color);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.portfolio-cardbox__type {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    margin: 0;
+}
+

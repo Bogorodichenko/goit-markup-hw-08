@@ -1,0 +1,42 @@
+.clients-logo-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.clients__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+    transition: border var(--timing-function);
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--accent-color);
+    }
+
+    &:hover .clients__icon,
+    &:focus .clients__icon {
+        fill: var(--accent-color);
+    }
+}
+
+.clients__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 106px;
+    height: 60px;
+    fill: #AFB1B8;
+    transition: fill var(--timing-function);
+}

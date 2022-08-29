@@ -1,0 +1,115 @@
+.footer {
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-aline {
+    display: flex;
+    align-items: baseline
+}
+
+.footer-address {
+    margin-right: 70px;
+}
+
+.footer__logo {
+    display: block;
+    margin-bottom: 20px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.address {
+    font-style: normal;
+    line-height: 1.7;
+}
+
+.address__post {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 9px;
+}
+
+.footer-contact {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+
+        &>.footer-contact__item {
+                margin-bottom: 9px;
+            }
+        &>.footer-contact__item:last-child {
+                            margin-bottom: 0;
+                        }
+}
+
+.footer-contact__link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    transition: color var(--timing-function);
+
+        &:hover,
+        &:focus {
+                color: var(--accent-color);
+            }
+}
+
+// Соцмережі у футері/Приєднуйся
+.footer-socialmedia {
+    margin-right: 93px;
+}
+
+.footer-title {
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.footer-social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer-social__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    fill: #FFFFFF;
+}
+
+.scialmedia-link--background-color {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    transition: background-color var(--timing-function);
+}
