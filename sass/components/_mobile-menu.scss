@@ -34,7 +34,7 @@
     padding-left: 40px;
     padding-right: 40px;
 
-    background-color: teal;
+    background-color: #FFFFFF;
 
 }
 
@@ -51,6 +51,42 @@
 
 .menu-list:nth-child(2) {
     margin-bottom: 64px;
+}
+
+.menu__item{
+    margin-bottom: 32px;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.menu-list__link{
+    text-decoration: none;
+    color: #212121;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    &--current{
+        color: var(--accent-color);
+    }
+}
+
+.menu-list__contactlink{
+    text-decoration: none;
+    color: #757575;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em; 
+
+    &--current {
+        color: var(--accent-color);
+        font-size: 34px;
+    }
 }
 
 .menu-social {
@@ -75,6 +111,7 @@
 .menu-social__link {
     text-decoration: none;
     color: var(--accent-color);
+    font: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
